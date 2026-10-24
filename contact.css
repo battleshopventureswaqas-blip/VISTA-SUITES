@@ -1,0 +1,94 @@
+:root {
+    --text-light: #ffffff;
+    --overlay-color: rgba(45, 51, 60, 0.85); /* Deep moody grey overlay */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- Main Background Section --- */
+.contact-section {
+    /* Blend a dark grey gradient over a moody interior/mountain background image */
+    background: linear-gradient(var(--overlay-color), var(--overlay-color)), 
+                url("https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80") center/cover no-repeat;
+    min-height: 100vh; /* Takes up the full screen height */
+    width: 100%;
+}
+
+/* --- Brand Title (Top Center) --- */
+.brand-title {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 2.25rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    color: var(--text-light);
+}
+
+/* --- Edge-to-Edge Thin Horizontal Divider --- */
+.divider-line {
+    border-top: 1px solid rgba(255, 255, 255, 0.35); /* Super thin, semi-transparent line */
+    margin: 0;
+    position: absolute;
+    top: 50%; /* Places it perfectly in the middle */
+    left: 0;
+    transform: translateY(-50%);
+}
+
+/* --- Column Headings --- */
+.contact-heading {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--text-light);
+}
+
+/* --- Column Paragraph Text --- */
+.contact-text {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.8; /* Generous spacing between lines */
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* --- Social Icons --- */
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--text-light); /* Thin white circle */
+    border-radius: 50%;
+    color: var(--text-light);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.social-icon:hover {
+    background-color: var(--text-light);
+    color: #20252d; /* Inverts color on hover */
+}
+
+/* --- Responsive Layout Adjustments --- */
+@media (max-width: 768px) {
+    .divider-line {
+        position: relative;
+        top: auto;
+        transform: none;
+        margin: 2rem 0;
+    }
+    .contact-section {
+        padding: 4rem 0;
+    }
+}

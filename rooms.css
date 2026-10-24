@@ -1,0 +1,130 @@
+:root {
+    --bg-light: #dfdfdf; /* Light stone grey matching the image */
+    --bg-dark: #20252d;  /* Deep navy/charcoal for testimonials */
+    --text-primary: #1a1a1a;
+    --border-color: #bcbcbc;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-light);
+}
+
+/* --- Navigation Styling --- */
+.site-navigation {
+    background-color: var(--bg-dark); 
+}
+
+/* --- Global Typography --- */
+.section-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 3rem;
+    }
+}
+
+/* --- Rooms & Suites Section --- */
+.rooms-section {
+    background-color: var(--bg-light);
+    color: var(--text-primary);
+}
+
+.room-card {
+    background-color: transparent !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 0 !important; /* Enforces completely square corners */
+    
+    /* ADD THIS: Controls the speed and smoothness of the movement */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* ADD THIS ENTIRE BLOCK: Defines what happens when the mouse hovers */
+.room-card:hover {
+    transform: translateY(-10px); /* Moves the card up by 10 pixels */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Adds a soft drop shadow for a 3D lift effect */
+}
+
+.room-card img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0 !important;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Guest Info / Small Typography */
+.guest-info {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    color: #4a4a4a;
+}
+
+/* Room Titles */
+.room-name {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.25rem;
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    color: var(--text-primary);
+}
+
+/* Pricing Tag */
+.price-tag {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Custom SVG Bed Icons */
+.bed-icons {
+    display: flex;
+    gap: 8px;
+}
+.bed-icon {
+    width: 20px;
+    height: 20px;
+    stroke: #4a4a4a; /* Matches the text color */
+}
+
+
+/* --- Testimonials Section --- */
+.testimonials-section {
+    background-color: var(--bg-dark);
+}
+
+.testimonial-card {
+    background-color: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 0 !important;
+    padding: 1.5rem;
+}
+
+.quote-text {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+.author {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+

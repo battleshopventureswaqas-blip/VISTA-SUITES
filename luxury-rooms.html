@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bespoke Hospitality - Luxury Room</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="luxury-room.css" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+
+    <!-- Professional Navigation Bar -->
+    <nav class="site-navigation navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <!-- Brand Logo / Title -->
+        <a class="navbar-brand fw-bold mx-3" href="index.html">VISTA SUITES</a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-3">
+            <li class="nav-item mx-2">
+              <a class="text-light nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="text-light nav-link" href="about.html">About</a>
+            </li>
+            <!-- Rooms & Suites Dropdown (Fixed) -->
+            <li class="nav-item dropdown mx-2">
+              <a class="text-light nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Rooms & Suites
+              </a>
+              <ul class="dropdown-menu site-navigation border-0">
+                <li><a class="text-light dropdown-item" href="rooms-suites.html">All Rooms & Suites</a></li>
+                <li><a class="text-light dropdown-item" href="luxury-rooms.html">Luxury Rooms</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="text-light nav-link" href="special-offers.html">Special Offers</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="text-light nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- 1. Hero Section -->
+    <header class="luxury-hero d-flex flex-column justify-content-center align-items-center text-center text-light">
+      <h1 class="hero-title mb-4">LUXURY ROOM</h1>
+      <p class="hero-subtitle">
+        Showcase the best your property has to offer<br>
+        by highlighting one of your accommodations.<br>
+        Give a room tour with a gallery of photos or a walkthrough video.
+      </p>
+    </header>
+
+    <!-- 2. Two-Column Gallery Section -->
+    <section class="gallery-section container py-5 mt-4">
+      <div class="row g-4 justify-content-center">
+        <!-- Left Image -->
+        <div class="col-md-6 text-center px-md-4">
+          <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid w-100 gallery-img" alt="Table detail">
+          <p class="caption-text mt-4 mx-auto">
+            An intriguing caption that describes the room goes here.<br>
+            Use a flattering photo, then describe away!
+          </p>
+        </div>
+        <!-- Right Image -->
+        <div class="col-md-6 text-center px-md-4">
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid w-100 gallery-img" alt="Sofa detail">
+          <p class="caption-text mt-4 mx-auto">
+            An intriguing caption that describes the room goes here.<br>
+            Use a flattering photo, then describe away!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Full-Width Feature Section -->
+    <section class="full-feature-section position-relative my-4">
+<img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="w-100 full-feature-img" alt="Room View">      
+      <!-- Overlay Text at bottom center -->
+      <div class="feature-overlay-text w-100 text-center text-light pb-5 ">
+        <p class="mb-0">
+          An intriguing caption that describes the room goes here.<br>
+          Use a flattering photo, then describe away!
+        </p>
+      </div>
+    </section>
+
+    <!-- 4. Floor Plan Section -->
+    <section class="floor-plan-section container text-center py-5 mb-5">
+      <!-- Using a placeholder architectural blueprint sketch with CSS blend modes to match the style -->
+<img src="images/home-map2.jpg" class="img-fluid floor-plan-img mb-5" alt="House Floor Plan" style="padding: 20px; border-radius: 8px;">
+      <p class="caption-text mx-auto">
+        Describe the floor plan.<br>
+        Add supporting details potential guests need to know.
+      </p>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

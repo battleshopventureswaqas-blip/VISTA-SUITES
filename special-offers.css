@@ -1,0 +1,74 @@
+:root {
+    --bg-color: #e4e4e4; /* Light stone grey matching the image */
+    --text-primary: #1a1a1a;
+    --border-color: #a8a8a8; /* Thin grey border color */
+}
+
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- Global Typography --- */
+.section-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 5.5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 3.5rem;
+    }
+}
+
+/* --- Offer Cards Styling --- */
+.offer-card {
+    /* Makes the card blend seamlessly into the background, showing only the border */
+    background-color: transparent !important; 
+    border: 1px solid var(--border-color) !important;
+    border-radius: 0 !important; /* Forces completely sharp square edges */
+}
+
+.offer-card img {
+    height: 280px;
+    object-fit: cover;
+    border-radius: 0 !important;
+    /* Adds a thin line separating the image from the text below it */
+    border-bottom: 1px solid var(--border-color); 
+}
+
+/* Card Titles */
+.offer-title {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: var(--text-primary);
+}
+
+/* Card Description Text */
+.offer-text {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    color: #444444; /* Slightly softer than pure black for readability */
+}
+/* --- Special Offers Card Hover Effect --- */
+.offer-card {
+    /* Controls the speed and smoothness of the movement */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Defines what happens when the mouse hovers */
+.offer-card:hover {
+    transform: translateY(-10px); /* Moves the card up by 10 pixels */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Adds a soft drop shadow */
+}

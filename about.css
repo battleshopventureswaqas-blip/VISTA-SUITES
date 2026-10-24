@@ -1,0 +1,129 @@
+:root {
+    --bg: #20252d;
+    --bg2: #dbdbdb;
+}
+
+/* Base Colors */
+body {
+    background-color: var(--bg);
+}
+
+.colors {
+    background-color: var(--bg);
+}
+
+/* --- About Top Section --- */
+.about h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 5.5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+
+.about-top {
+    background-color: var(--bg2);
+    height: auto;
+    color: #20252d;
+}
+
+/* Responsive H1 for Mobile */
+@media (max-width: 768px) {
+    .about h1 {
+        font-size: 3rem;
+        width: 100% !important;
+    }
+}
+
+/* --- Middle Text Section --- */
+.mid {
+    background-color: var(--bg);
+    color: white;
+}
+
+.mid p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 300;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #e0e0e0;
+}
+
+/* --- Amenities Section --- */
+.cent {
+    background-color: var(--bg);
+    color: white;
+}
+
+.amenity-card {
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 0 !important; 
+}
+
+.amenity-card h6 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* --- Awards & Global Headings --- */
+.last {
+    background-color: var(--bg);
+}
+
+.cent h2, .last h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* --- Award Items --- */
+.award-item {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0px;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.award-item h6 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.award-item p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+}
+
+/* --- CSS Grid Layout for Awards --- */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+}
+
+@media (min-width: 768px) {
+    .main-grid {
+        grid-template-columns: repeat(6, 1fr); 
+        gap: 30px;
+    }
+
+    .award-item:nth-child(1),
+    .award-item:nth-child(2),
+    .award-item:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    .award-item:nth-child(4) {
+        grid-column: 2 / span 2; 
+    }
+
+    .award-item:nth-child(5) {
+        grid-column: 4 / span 2;
+    }
+}

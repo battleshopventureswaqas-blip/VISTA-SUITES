@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bespoke Hospitality - Rooms & Suites</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="rooms.css" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Professional Navigation Bar -->
+    <nav class="site-navigation navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container-fluid">
+        <!-- Brand Logo / Title -->
+        <a class="navbar-brand fw-bold mx-3" href="index.html">VISTA SUITES</a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-3">
+            <li class="nav-item mx-2">
+              <a class="text-light nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="text-light nav-link" href="about.html">About</a>
+            </li>
+            <!-- Rooms & Suites Dropdown (Fixed) -->
+            <li class="nav-item dropdown mx-2">
+              <a class="text-light nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Rooms & Suites
+              </a>
+              <ul class="dropdown-menu site-navigation border-0">
+                <li><a class="text-light dropdown-item" href="rooms-suites.html">All Rooms & Suites</a></li>
+                <li><a class="text-light dropdown-item" href="luxury-rooms.html">Luxury Rooms</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="text-light nav-link" href="special-offers.html">Special Offers</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="text-light nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ROOMS & SUITES SECTION -->
+    <section class="rooms-section container-fluid px-4 px-md-5 py-5">
+      <h1 class="section-title mb-5 mt-4">ROOMS & SUITES</h1>
+      
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        
+        <!-- Room 1: Luxury Room -->
+        <div class="col">
+          <div class="card h-100 room-card">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Luxury Room" />
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <p class="guest-info text-uppercase mb-0">MAX 2 GUESTS / 1<br>QUEEN OR<br>2 SINGLE BEDS</p>
+                <div class="bed-icons text-secondary">
+                  <svg class="bed-icon"><use href="#bed-svg"></use></svg>
+                  <svg class="bed-icon"><use href="#bed-svg"></use></svg>
+                  <svg class="bed-icon"><use href="#bed-svg"></use></svg>
+                </div>
+              </div>
+              <h2 class="room-name">LUXURY ROOM</h2>
+              <div class="mt-auto text-end">
+                <span class="price-tag text-uppercase">FROM $200/NIGHT &rarr;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Room 2: Deluxe Room -->
+        <div class="col">
+          <div class="card h-100 room-card">
+<img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Deluxe Room" />
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <p class="guest-info text-uppercase mb-0">MAX 2 GUESTS / 1<br>QUEEN OR<br>2 SINGLE BEDS</p>
+                <div class="bed-icons text-secondary">
+                  <svg class="bed-icon"><use href="#bed-svg"></use></svg>
+                  <svg class="bed-icon"><use href="#bed-svg"></use></svg>
+                  <svg class="bed-icon"><use href="#bed-svg"></use></svg>
+                </div>
+              </div>
+              <h2 class="room-name">DELUXE ROOM</h2>
+              <div class="mt-auto text-end">
+                <span class="price-tag text-uppercase">FROM $250/NIGHT &rarr;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Room 3: Studio Suite -->
+        <div class="col">
+          <div class="card h-100 room-card">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Studio Suite" />
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <p class="guest-info text-uppercase mb-0">MAX 2 GUESTS / 1<br>QUEEN OR<br>1 KING BED</p>
+                <div class="bed-icons text-secondary">
+                  <svg class="bed-icon"><use href="#bed-svg"></use></svg>
+                  <svg class="bed-icon"><use href="#bed-svg"></use></svg>
+                </div>
+              </div>
+              <h2 class="room-name">STUDIO SUITE</h2>
+              <div class="mt-auto text-end">
+                <span class="price-tag text-uppercase">FROM $300/NIGHT &rarr;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Room 4: Executive Suite -->
+        <div class="col">
+          <div class="card h-100 room-card">
+<img src="https://images.unsplash.com/photo-1631049035182-249067d7618e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Executive Suite" />
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <p class="guest-info text-uppercase mb-0">MAX 2 GUESTS / 1<br>KING BED OR<br>2 SINGLE BEDS</p>
+                <div class="bed-icons text-secondary">
+                  <svg class="bed-icon"><use href="#bed-svg"></use></svg>
+                  <svg class="bed-icon"><use href="#bed-svg"></use></svg>
+                  <svg class="bed-icon"><use href="#bed-svg"></use></svg>
+                </div>
+              </div>
+              <h2 class="room-name w-75">EXECUTIVE SUITE</h2>
+              <div class="mt-auto text-end">
+                <span class="price-tag text-uppercase">FROM $350/NIGHT &rarr;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Room 5: Premier Suite -->
+        <div class="col">
+          <div class="card h-100 room-card">
+            <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Premier Suite" />
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <p class="guest-info text-uppercase mb-0">MAX 4 GUESTS /<br>2 QUEEN BEDS</p>
+                <div class="bed-icons text-secondary">
+                  <svg class="bed-icon"><use href="#bed-svg"></use></svg>
+                  <svg class="bed-icon"><use href="#bed-svg"></use></svg>
+                </div>
+              </div>
+              <h2 class="room-name">PREMIER SUITE</h2>
+              <div class="mt-auto text-end pt-4">
+                <span class="price-tag text-uppercase">FROM $450/NIGHT &rarr;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Room 6: Penthouse Suite -->
+        <div class="col">
+          <div class="card h-100 room-card">
+            <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Penthouse Suite" />
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <p class="guest-info text-uppercase mb-0">MAX 4 GUESTS /<br>2 KING BEDS</p>
+                <div class="bed-icons text-secondary">
+                  <svg class="bed-icon"><use href="#bed-svg"></use></svg>
+                  <svg class="bed-icon"><use href="#bed-svg"></use></svg>
+                </div>
+              </div>
+              <h2 class="room-name w-75">PENTHOUSE SUITE</h2>
+              <div class="mt-auto text-end pt-4">
+                <span class="price-tag text-uppercase">FROM $500/NIGHT &rarr;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section container-fluid px-4 px-md-5 py-5 text-light">
+      <h1 class="section-title text-light mb-5 mt-4">WHAT OUR<br>GUESTS SAY</h1>
+      
+      <div class="row row-cols-1 row-cols-md-3 g-4 mb-5 pb-5">
+        
+        <!-- Testimonial 1 -->
+        <div class="col">
+          <div class="card h-100 testimonial-card">
+            <div class="card-body d-flex flex-column">
+              <p class="quote-text flex-grow-1">
+                "Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
+              </p>
+              <p class="author mt-4 mb-0">— CARLY FERRIS</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="col">
+          <div class="card h-100 testimonial-card">
+            <div class="card-body d-flex flex-column">
+              <p class="quote-text flex-grow-1">
+                "Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services."
+              </p>
+              <p class="author mt-4 mb-0">— NEIL TRAN</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="col">
+          <div class="card h-100 testimonial-card">
+            <div class="card-body d-flex flex-column">
+              <p class="quote-text flex-grow-1">
+                "Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
+              </p>
+              <p class="author mt-4 mb-0">— JIN AE SOO</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Reusable Bed SVG Icon -->
+    <svg style="display: none;">
+      <symbol id="bed-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="10" width="20" height="6" rx="1" />
+        <path d="M2 16v4" />
+        <path d="M22 16v4" />
+        <path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4" />
+        <path d="M2 10h20" />
+      </symbol>
+    </svg>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
